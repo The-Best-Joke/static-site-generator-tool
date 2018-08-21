@@ -1,0 +1,22 @@
+{
+    "about": "This static site generator tool was created as part of an assignment for KI Labs.",
+    "color": "#7b2143",
+	"ripple_rgb": "033, 58, 183",
+    "favicon": "favicon.png",
+    "subtitle": "Static Site Resume Generator",
+    "title": "Alejandro's CV",
+	"icons": [
+        {
+            "id": "circlelinkedin",
+            "url": "https://www.linkedin.com/in/alejandroesalazar/"
+        },
+		{
+			"id": "circlegithubalt",
+			"url": "http://github.com/the-best-joke"
+		},
+        {
+            "id": "circlebehance",
+            "url": "https://www.behance.net/The_Best_Joke"
+        }
+	]
+}

@@ -1,0 +1,16 @@
+{
+	"activities": [
+		{
+			"title": "Cooking",
+			"description": "Cause if you're gonna eat, you might as well do it right."
+		},
+		{
+			"title": "Gym",
+			"description": "5 times a week. Get that pump."
+		},
+		{
+			"title": "Learning German",
+			"description": "Ich habe mich verlaufen!"
+		}
+	]
+}

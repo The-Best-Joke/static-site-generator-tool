@@ -1,0 +1,16 @@
+{
+	"projects": [
+		{
+			"title": "Static Resume Generator",
+			"description": "Single page static site Resume generator tool.",
+			"text": "Generate a single page website resume using CLI commands and a little JSON.",
+			"uses": "Jinja2, Javascript, JQuery, CSS, JSON",
+			"buttons": [
+				{
+					"text": "GITHUB",
+					"link": "http://github.com/the-best-joke"
+				}
+			]
+		}
+	]
+}

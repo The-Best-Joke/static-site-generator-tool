@@ -1,0 +1,36 @@
+{
+	"jobs": [
+		{
+			"title": "Openhouse",
+			"position": "Full Stack Engineer",
+			"dates": "Sep 2017 - Dec 2017",
+			"text": "• Full Stack Engineer for an incubator-backed start-up called OpenHouse. <br> • Developed website in a TDD – Agile approach as part of a 5-person engineering team. <br> • <b>Technology</b>: Ruby on Rails ⋅ HTML ⋅ CSS ⋅ mySQL ⋅ Cucumber ⋅ Capybara ⋅ CodeClimate ⋅ TravisCI ⋅ PivotalTracker ⋅ Git"
+		},
+		{
+			"title": "Tienda TV",
+			"position": "Full Stack Developer",
+			"dates": "May 2017 - Aug 2017",
+			"text": "• Coded the front and backend of the ad-exchange company’s website. <br> • Redesigned the company’s existing logo using Adobe Illustrator. <br> • <b>Technology</b>: Laravel ⋅ HTML ⋅ CSS ⋅ Javascript ⋅ Bootstrap ⋅ PHP"
+		},
+		{
+			"title": "Personal Website",
+			"position": "Web Developer",
+			"dates": "Aug 2016 - Sep 2016",
+			"text": "• Designed and programmed my own personal website from scratch. <br> • <b>Technology</b>: HTML ⋅ CSS ⋅ JQuery ⋅ Bootstrap ⋅ Git"
+
+		},
+		{
+			"title": "Latin American Leadership Society",
+			"position": "Graphic Designer",
+			"dates": "Nov 2014 - Aug 2016",
+			"text": "• Designed the logo and wrote the brand guidelines for UC Berkeley’s Latin American Leadership Society student group. <br> • <b>Technology</b>: Adobe Illustrator ⋅ Adobe Photoshop"
+
+		},
+		{
+			"title": "Qinaya S.A.S",
+			"position": "Front-End Developer – Summer Intern",
+			"dates": "Jun 2015 - Aug 2015",
+			"text": "• Individually designed and developed – from mockups to front-end – the website of a software consulting company. <br> • Redesigned the company’s logo and wrote the brand guidelines. <br> • <b>Technology</b>: ZK ⋅ Java ⋅ HTML ⋅ CSS ⋅ Javascript ⋅ Bootstrap"
+		}
+	]
+}

@@ -1,0 +1,141 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="{{ color }}">
+	<title>{{ title }}</title>
+	<style>
+		a {color:{{ color }};}
+		.ripple {background: rgba({{ ripple_rgb }}, 0.4);}
+	</style>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/script.js"></script>
+	<link rel="icon" type="image/png" href="{{ favicon }}">
+</head>
+
+<body>
+	<div style="background: {{ color }};" id="hero">
+			<div id="title-bar">
+				<div>
+					<h1>{{ title }}</h1>
+					<h2 id="subtitle">{{ subtitle }}</h4>
+				</div>
+				<div>
+					{% for icon in icons %}
+					<a href='{{ icon.url }}' class='symbol' title='{{ icon.id }}'></a>
+					{% endfor %}
+				</div>
+			</div>
+	</div>
+
+	<div id="page-wrap">
+		{% if about is defined and about|length > 0 %}
+		<div class="card">
+			<div class="card-title">About</div>
+			<div class="card-text">{{ about }}</div>
+		</div>
+		{% endif %}
+
+		{% if schools is defined and schools|length > 0 %}
+		<div class="card">
+			<div class="card-title">Education</div>
+			{% for school in schools%}
+			<div class="card-list-element">
+				<div class="card-list-title">{{ school.title }}</div>
+				<div class="card-list-subtitle">{{ school.subtitle }}</div>
+				<div class="card-hidden">
+					<div class="card-list-text">{{ school.text }}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+
+		{% if jobs is defined and jobs|length > 0 %}
+		<div class="card">
+			<div class="card-title">Employment</div>
+			{% for job in jobs %}
+			<div class="card-list-element">
+				<div class="card-list-title">{{ job.title }}</div>
+				<div class="card-list-subtitle">{{ job.position }} <br /> {{ job.dates }}</div>
+				<div class="card-hidden">
+					<div class="card-list-text">{{ job.text }}</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+
+		{% if experiences is defined and experiences|length > 0 %}
+		<div class="card">
+			<div class="card-title">Experience</div>
+			<div class="card-list-element no_select small">
+				<b class="no_select">CS Languages:</b> {{ experiences.cslanguages }}
+			</div>
+			<div class="card-list-element no_select small">
+				<b class="no_select">Frameworks:</b> {{ experiences.frameworks }}
+			</div>
+			<div class="card-list-element no_select small">
+				<b class="no_select">Operating Systems:</b> {{ experiences.os }}
+			</div>
+			<div class="card-list-element no_select small">
+				<b class="no_select">Natural Languages:</b> {{ experiences.nl }}
+			</div>
+		</div>
+		{% endif %}
+
+		{% if projects is defined and projects|length > 0 %}
+		<div class="card">
+			<div class="card-title">Projects</div>
+			{% for project in projects %}
+			<div class="card-list-element small">
+				<b>{{ project.title }}:</b> {{ project.description }}
+				<div class="card-hidden">
+					<div class="card-list-text">{{ project.text }}</div>
+					{% if project.uses is defined %}
+					<br />
+					<p>
+						<b>Uses: </b> {{ project.uses }}
+					</p>
+					{% endif %}
+					{% for button in project.buttons %}
+					<a  style="color: {{ color }}"class="card-button" href="{{ button.link }}" target="_blank">{{ button.text }}</a>
+					{% endfor %}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+
+		{% if awards is defined and awards|length > 0 %}
+		<div class="card">
+			<div class="card-title">Awards</div>
+			{% for award in awards %}
+			<div class="card-list-element no_select">
+				<div class="card-list-title no_select">{{ award.title }}</div>
+				<div class="card-list-subtitle no_select">{{ award.subtitle }} <br /> {{ award.dates }}</div>
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+
+		{% if activities is defined and activities|length > 0 %}
+		<div class="card">
+			<div class="card-title">Activities</div>
+			{% for activity in activities %}
+			<div class="card-list-element no_select small">
+				<b class="no_select">{{ activity.title }}:</b> {{ activity.description }}
+			</div>
+			{% endfor %}
+		</div>
+		{% endif %}
+
+		<div id="footer"><a href="http://github.com/the-best-joke">Alejandro's Github</a></div>
+	</div>
+
+
+</body>
+
+</html>
